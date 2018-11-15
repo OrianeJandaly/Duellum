@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Couleur1"
+    tools:context=".Load_Main">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="159dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:lineSpacingExtra="-50sp"
+        android:lines="2"
+        android:text="@string/app_name"
+        android:textAllCaps="false"
+        android:textColor="@color/Couleur3"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:fontFamily="casual"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="272dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:lineSpacingExtra="0sp"
+        android:lines="2"
+        android:text="@string/sub_app_name"
+        android:textAllCaps="false"
+        android:textColor="@color/Couleur3"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:fontFamily="casual"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <ScrollView
+            android:id="@+id/jeux"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="67dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="67dp"
+            android:clipToPadding="false"
+            android:fillViewport="true"
+            android:scrollbarStyle="insideOverlay"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/joueur1"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Joueur 1"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/Couleur3"
+                    app:fontFamily="casual"
+                    tools:layout_editor_absoluteX="33dp"
+                    tools:layout_editor_absoluteY="181dp" />
+
+                <EditText
+                    android:id="@+id/joueur2"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+
+                    android:ems="10"
+                    android:hint="Joueur 2"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/Couleur3"
+                    app:fontFamily="casual"
+                    app:layout_constraintEnd_toEndOf="@+id/joueur1"
+                    app:layout_constraintStart_toStartOf="@+id/joueur1"
+                    tools:layout_editor_absoluteY="232dp" />
+
+                <EditText
+                    android:id="@+id/joueur3"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Joueur 3"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/Couleur3"
+                    app:fontFamily="casual"
+                    app:layout_constraintEnd_toEndOf="@+id/joueur2"
+                    app:layout_constraintStart_toStartOf="@+id/joueur2"
+                    tools:layout_editor_absoluteY="278dp" />
+
+                <EditText
+                    android:id="@+id/joueur4"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Joueur 4"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/Couleur3"
+                    app:fontFamily="casual"
+                    app:layout_constraintEnd_toEndOf="@+id/joueur3"
+                    app:layout_constraintStart_toStartOf="@+id/joueur3"
+                    tools:layout_editor_absoluteY="324dp" />
+
+            </LinearLayout>
+        </ScrollView>
+
+        <EditText
+            android:id="@+id/pp_joueur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:hint="Manches par joueur"
+            android:inputType="number"
+            android:singleLine="true"
+            android:textColor="@color/Couleur3"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/jouer"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/jeux" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/jouer"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="155dp"
+
+        android:layout_height="81dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginEnd="136dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/Couleur3"
+        android:lineSpacingExtra="8sp"
+        android:padding="10dp"
+        android:text="Jouer"
+        android:textColor="@color/Couleur1"
+        android:textSize="45sp"
+        android:typeface="monospace"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.441"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.342" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="67dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="55dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toStartOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/beer" />
+
+</android.support.constraint.ConstraintLayout>
