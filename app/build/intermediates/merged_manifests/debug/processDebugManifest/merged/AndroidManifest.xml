@@ -26,8 +26,9 @@
             </intent-filter>
         </activity>
         <activity android:name="fr.epsi.duellum.duellum.Load_GameList" />
-        <activity android:name="fr.epsi.duellum.duellum.Load_Manche" />
         <activity android:name="fr.epsi.duellum.duellum.Load_NewManche" />
+        <activity android:name="fr.epsi.duellum.duellum.Load_Manche" />
+        <activity android:name="fr.epsi.duellum.duellum.Load_EndManche" />
     </application>
 
 </manifest>

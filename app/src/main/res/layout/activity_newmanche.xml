@@ -182,7 +182,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/jouer_newmanche"
+        android:id="@+id/continue_endmanche"
         style="@style/Widget.AppCompat.Button"
         android:layout_width="match_parent"
 

@@ -14,6 +14,7 @@ import java.util.ArrayList;
 
 import fr.epsi.duellum.duellum.Class_Game;
 import fr.epsi.duellum.duellum.Class_Player;
+import fr.epsi.duellum.duellum.Load_EndManche;
 import fr.epsi.duellum.duellum.Load_Manche;
 import fr.epsi.duellum.duellum.Load_NewManche;
 import fr.epsi.duellum.duellum.R;
@@ -79,7 +80,7 @@ public class ClickTest extends Class_Game {
                     handler.postDelayed(new Runnable() {
                         @Override
                         public void run() {
-                            startActivity(a, c, Load_Manche.class);
+                            startActivity(a, c, Load_EndManche.class);
                         }
                     }, 5000);
                 }
@@ -92,12 +93,11 @@ public class ClickTest extends Class_Game {
         a.startActivityForResult(i, 1);
     }
 
-    public void Start(Activity a, Context c, Class_Player _j1, Class_Player _j2) {
+    public void Start(Activity a, Context c) {
         score1 = 0;
+        winner = null;
         score2 = 0;
         compteur = 10.00;
-        j1 = _j1;
-        j2 = _j2;
         Count(a, c);
     }
 

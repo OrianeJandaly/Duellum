@@ -17,8 +17,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".Load_GameList"></activity>
-        <activity android:name=".Load_Manche"></activity>
         <activity android:name=".Load_NewManche"></activity>
+        <activity android:name=".Load_Manche"></activity>
+        <activity android:name=".Load_EndManche"></activity>
+
     </application>
 
 </manifest>

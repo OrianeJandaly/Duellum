@@ -79,6 +79,21 @@ public class Class_Player {
         return count;
     }
 
+    public static boolean isOver() {
+        boolean over = true;
+        boolean over_2 = true;
+        for (Class_Player player : joueurs) {
+            if (player.canPlay()) {
+                if (over) {
+                    over_2 = false;
+                } else {
+                    over = false;
+                }
+            }
+        }
+        return (!over && !over_2);
+    }
+
     public static void resetJoueurs() {
         joueurs.clear();
     }

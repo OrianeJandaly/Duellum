@@ -87,14 +87,14 @@ public class Class_Game {
     public void EditLayout(Activity a) {
     }
 
-    public void Start(Activity a, Context c, Class_Player j1, Class_Player j2) {
+    public void Start(Activity a, Context c) {
     }
 
     //static
 
     public static void LoadGames() {
-        jeux = new ArrayList<Class_Game>();
+        jeux = new ArrayList<>();
         jeux.add(new ClickTest());
-        jeux.add(new ClickTest());
+
     }
 }

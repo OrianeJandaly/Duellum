@@ -645,6 +645,7 @@ drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable beer
+drawable crown
 drawable game_click
 drawable icone
 drawable notification_action_background
@@ -714,6 +715,7 @@ id clip_vertical
 id collapseActionView
 id content
 id contentPanel
+id continue_endmanche
 id count_newmanche
 id custom
 id customPanel
@@ -744,13 +746,14 @@ id ifRoom
 id image
 id imageView
 id imageView2
+id imageView3
+id imageView4
 id info
 id invisible
 id italic
 id item_touch_helper_previous_elevation
 id jeux
 id jouer
-id jouer_newmanche
 id joueur1
 id joueur1_newmanche
 id joueur2
@@ -766,6 +769,8 @@ id linearLayout2
 id linearLayout3
 id listMode
 id list_item
+id looser_endmanche
+id manche_endmanche
 id message
 id middle
 id multiply
@@ -842,6 +847,7 @@ id uniform
 id up
 id useLogo
 id view
+id winner_endmanche
 id withText
 id wrap
 id wrap_content
@@ -878,6 +884,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_endmanche
 layout activity_jeux
 layout activity_main
 layout activity_manche
