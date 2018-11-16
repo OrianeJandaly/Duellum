@@ -44,6 +44,10 @@
         "source": "C:\\Users\\janda\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\dfa8dcd1e932e744a76d1de25839f888\\res\\drawable-mdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png"
     },
     {
+        "merged": "C:\\Users\\janda\\StudioProjects\\Duellum\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_newmanche.xml.flat",
+        "source": "C:\\Users\\janda\\StudioProjects\\Duellum\\app\\src\\main\\res\\layout\\activity_newmanche.xml"
+    },
+    {
         "merged": "C:\\Users\\janda\\StudioProjects\\Duellum\\app\\build\\intermediates\\res\\merged\\debug\\layout-watch-v20_abc_alert_dialog_title_material.xml.flat",
         "source": "C:\\Users\\janda\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\dfa8dcd1e932e744a76d1de25839f888\\res\\layout-watch-v20\\abc_alert_dialog_title_material.xml"
     },
@@ -1170,6 +1174,10 @@
     {
         "merged": "C:\\Users\\janda\\StudioProjects\\Duellum\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_search_url_text.xml.flat",
         "source": "C:\\Users\\janda\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\dfa8dcd1e932e744a76d1de25839f888\\res\\color\\abc_search_url_text.xml"
+    },
+    {
+        "merged": "C:\\Users\\janda\\StudioProjects\\Duellum\\app\\build\\intermediates\\res\\merged\\debug\\drawable_game_click.xml.flat",
+        "source": "C:\\Users\\janda\\StudioProjects\\Duellum\\app\\src\\main\\res\\drawable\\game_click.xml"
     },
     {
         "merged": "C:\\Users\\janda\\StudioProjects\\Duellum\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_select_dialog_material.xml.flat",

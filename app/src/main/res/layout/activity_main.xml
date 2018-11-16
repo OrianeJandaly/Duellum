@@ -3,6 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:focusableInTouchMode="true"
+    android:clickable="true"
+    android:focusable="true"
     android:layout_height="match_parent"
     android:background="@color/Couleur1"
     tools:context=".Load_Main">
@@ -47,18 +50,16 @@
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="32dp"
         android:gravity="center"
         android:orientation="vertical"
-        app:layout_constraintTop_toBottomOf="@+id/textView2">
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        tools:layout_editor_absoluteX="0dp">
 
         <ScrollView
             android:id="@+id/jeux"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="67dp"
-            android:layout_marginTop="32dp"
-            android:layout_marginEnd="67dp"
             android:clipToPadding="false"
             android:fillViewport="true"
             android:scrollbarStyle="insideOverlay"
@@ -80,6 +81,7 @@
                     android:ems="10"
                     android:hint="Joueur 1"
                     android:inputType="textPersonName"
+                    android:text="joueur1"
                     android:textColor="@color/Couleur3"
                     app:fontFamily="casual"
                     tools:layout_editor_absoluteX="33dp"
@@ -93,6 +95,7 @@
                     android:ems="10"
                     android:hint="Joueur 2"
                     android:inputType="textPersonName"
+                    android:text="joueur2"
                     android:textColor="@color/Couleur3"
                     app:fontFamily="casual"
                     app:layout_constraintEnd_toEndOf="@+id/joueur1"
@@ -106,6 +109,7 @@
                     android:ems="10"
                     android:hint="Joueur 3"
                     android:inputType="textPersonName"
+                    android:text="joueur3"
                     android:textColor="@color/Couleur3"
                     app:fontFamily="casual"
                     app:layout_constraintEnd_toEndOf="@+id/joueur2"
@@ -119,6 +123,7 @@
                     android:ems="10"
                     android:hint="Joueur 4"
                     android:inputType="textPersonName"
+                    android:text="joueur4"
                     android:textColor="@color/Couleur3"
                     app:fontFamily="casual"
                     app:layout_constraintEnd_toEndOf="@+id/joueur3"
@@ -128,48 +133,69 @@
             </LinearLayout>
         </ScrollView>
 
-        <EditText
-            android:id="@+id/pp_joueur"
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="186dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <TextView
+            android:id="@+id/textView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:text="Manches par joueur : "
+            android:textColor="@color/Couleur3" />
+
+        <EditText
+            android:id="@+id/pp_joueur"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="32dp"
-            android:layout_marginEnd="8dp"
+            android:layout_weight="0"
             android:ems="10"
-            android:hint="Manches par joueur"
             android:inputType="number"
-            android:singleLine="true"
+            android:selectAllOnFocus="true"
+            android:singleLine="false"
+            android:text="3"
+            android:textAlignment="center"
             android:textColor="@color/Couleur3"
             android:textSize="16sp"
             app:layout_constraintBottom_toTopOf="@+id/jouer"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/jeux" />
+            app:layout_constraintTop_toBottomOf="@+id/jeux"
+            tools:text="3" />
 
     </LinearLayout>
 
     <Button
         android:id="@+id/jouer"
         style="@style/Widget.AppCompat.Button"
-        android:layout_width="155dp"
+        android:layout_width="match_parent"
 
-        android:layout_height="81dp"
-        android:layout_marginStart="136dp"
-        android:layout_marginEnd="136dp"
-        android:layout_marginBottom="8dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="32dp"
         android:background="@color/Couleur3"
-        android:lineSpacingExtra="8sp"
+        android:fontFamily="casual"
+        android:lineSpacingExtra="0sp"
         android:padding="10dp"
         android:text="Jouer"
         android:textColor="@color/Couleur1"
         android:textSize="45sp"
         android:typeface="monospace"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.441"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        app:layout_constraintVertical_bias="0.342" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
 
     <ImageView
         android:id="@+id/imageView"

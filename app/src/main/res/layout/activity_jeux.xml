@@ -7,12 +7,31 @@
     android:background="@color/Couleur1"
     tools:context=".Load_GameList">
 
+    <Button
+        android:id="@+id/gamelist_jouer"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:background="@color/Couleur3"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:lineSpacingExtra="0sp"
+        android:padding="10dp"
+        android:text="Jouer"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/Couleur1"
+        android:textSize="45sp"
+        android:typeface="monospace"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jeux" />
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="0dp"
         android:layout_height="74dp"
-        android:layout_marginTop="51dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginTop="32dp"
         android:gravity="center"
         android:lineSpacingExtra="8sp"
         android:lines="2"
@@ -22,20 +41,40 @@
         android:textSize="40sp"
         android:textStyle="bold"
         app:fontFamily="casual"
-        app:layout_constraintBottom_toTopOf="@+id/jeux"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lines="2"
+        android:text="Choisissez les jeux pour la partie"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/Couleur3"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:fontFamily="casual"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <ListView
         android:id="@+id/jeux"
         android:layout_width="wrap_content"
         android:layout_height="354dp"
         android:layout_marginTop="8dp"
-        android:layout_marginBottom="80dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:divider="@color/Couleur3"
+        android:dividerHeight="1dp"
+        android:footerDividersEnabled="true"
+        android:headerDividersEnabled="true"
+        android:scrollbars="vertical"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
 
 </android.support.constraint.ConstraintLayout>

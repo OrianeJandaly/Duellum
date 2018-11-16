@@ -1,46 +1,79 @@
 package fr.epsi.duellum.duellum;
 
 import android.app.Activity;
+import android.content.Context;
 import android.graphics.Bitmap;
 
 import java.util.ArrayList;
+import java.util.Random;
 
 import fr.epsi.duellum.duellum.Games.ClickTest;
 
 public class Class_Game {
-    protected String nom;
-    protected String description;
-    protected Bitmap image;
-    protected ArrayList<Integer> objets;
-
+    private String nom;
+    private String description;
+    private boolean enabled;
     private static ArrayList<Class_Game> jeux;
-private static Class_Game active_game;
+    private static Class_Game active_game;
+
+
+    protected Class_Player j1;
+    protected Class_Player j2;
+    protected Class_Player winner;
+    protected ArrayList<Integer> objets;
+    protected Integer image;
+
+
     //constructeurs
     public Class_Game() {
     }
 
     public Class_Game(String _nom, String _description) {
-        nom = _nom;
-        description = _description;
-        //image = _image;
+        this.nom = _nom;
+        this.description = _description;
+        this.enabled = true;
     }
 
     //accesseurs
 
-    public static ArrayList<Class_Game> GetGames() {
+    public static ArrayList<Class_Game> getGames() {
         return jeux;
     }
 
-    public String GetName() {
+    public String getName() {
         return nom;
     }
 
-    public String GetDescription() {
+    public String getDescription() {
         return description;
     }
 
-    public Bitmap GetImage() {
+    public void setEnabled(boolean e) {
+        enabled = e;
+    }
+
+    public boolean isEnabled() {
+        return enabled;
+    }
+
+    public Integer getImage() {
         return image;
+    }
+
+    public void setMatchup(ArrayList<Class_Player> matchup) {
+        j1 = matchup.get(0);
+        j2 = matchup.get(1);
+        winner = null;
+    }
+
+    public static Class_Game getRandomGame() {
+        Random r = new Random();
+        Class_Game game = jeux.get(r.nextInt(jeux.size()));
+        if (game.isEnabled()) {
+            return game;
+        } else {
+            return getRandomGame();
+        }
     }
 
     public static Class_Game getActiveGame() {
@@ -50,13 +83,18 @@ private static Class_Game active_game;
     public static void setActiveGame(Class_Game jeu) {
         active_game = jeu;
     }
-    public void EditLayout(Activity a) {}
-    public void Start(Activity a, Class_Player j1, Class_Player j2) {}
+
+    public void EditLayout(Activity a) {
+    }
+
+    public void Start(Activity a, Context c, Class_Player j1, Class_Player j2) {
+    }
 
     //static
 
     public static void LoadGames() {
         jeux = new ArrayList<Class_Game>();
-        jeux.add(new ClickTest("Click Test", "Test de rapidité de clic sur 10 secondes"));
+        jeux.add(new ClickTest());
+        jeux.add(new ClickTest());
     }
 }
