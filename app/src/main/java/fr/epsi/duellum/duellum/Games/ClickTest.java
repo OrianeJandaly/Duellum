@@ -39,6 +39,7 @@ public class ClickTest extends Class_Game {
         this.objets.add(R.id.clicktest_count2);
         this.objets.add(R.id.clicktest_j1);
         this.objets.add(R.id.clicktest_j2);
+        this.objets.add(R.id.clicktest_middle);
         this.image = R.drawable.game_click;
     }
 

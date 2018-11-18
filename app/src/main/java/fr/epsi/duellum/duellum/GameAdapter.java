@@ -32,7 +32,7 @@ public class GameAdapter extends ArrayAdapter<Class_Game> {
         JeuViewHolder viewHolder = (JeuViewHolder) convertView.getTag();
         if (viewHolder == null) {
             viewHolder = new JeuViewHolder();
-            viewHolder.layout = (RelativeLayout) convertView.findViewById(R.id.cell_layout);
+            viewHolder.layout = (ConstraintLayout) convertView.findViewById(R.id.cell_layout);
             viewHolder.titre = (TextView) convertView.findViewById(R.id.titre);
             viewHolder.image = (ImageView) convertView.findViewById(R.id.image);
             viewHolder.description = (TextView) convertView.findViewById(R.id.description);
@@ -67,7 +67,7 @@ public class GameAdapter extends ArrayAdapter<Class_Game> {
     }
 
     private class JeuViewHolder {
-        public RelativeLayout layout;
+        public ConstraintLayout layout;
         public ImageView image;
         public TextView titre;
         public TextView description;

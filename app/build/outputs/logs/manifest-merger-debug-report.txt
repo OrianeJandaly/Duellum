@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\janda\AndroidStudioProjects\Duellum\app\src\main\AndroidManifest.xml:2:1-26:12
-INJECTED from C:\Users\janda\AndroidStudioProjects\Duellum\app\src\main\AndroidManifest.xml:2:1-26:12
-INJECTED from C:\Users\janda\AndroidStudioProjects\Duellum\app\src\main\AndroidManifest.xml:2:1-26:12
-INJECTED from C:\Users\janda\AndroidStudioProjects\Duellum\app\src\main\AndroidManifest.xml:2:1-26:12
+ADDED from C:\Users\janda\StudioProjects\Duellum\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from C:\Users\janda\StudioProjects\Duellum\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from C:\Users\janda\StudioProjects\Duellum\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from C:\Users\janda\StudioProjects\Duellum\app\src\main\AndroidManifest.xml:2:1-30:12
 MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\janda\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\dfa8dcd1e932e744a76d1de25839f888\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\janda\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\e83ab9549b147527ce76929ce9f943a8\AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\janda\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-28.0.0.aar\65b837eb07a54b4c3302edb96250c2f4\AndroidManifest.xml:17:1-22:12
@@ -32,25 +32,25 @@ MERGED from [com.android.support:interpolator:28.0.0] C:\Users\janda\.gradle\cac
 MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\janda\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\671689edf340933fb978fccfc07276d5\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\janda\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\0e4656f125f8ce193e09297cc51f80bb\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.core:runtime:1.1.1] C:\Users\janda\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\f437cab24aa6f088072efee29e5abbc6\AndroidManifest.xml:17:1-22:12
-INJECTED from C:\Users\janda\AndroidStudioProjects\Duellum\app\src\main\AndroidManifest.xml:2:1-26:12
-INJECTED from C:\Users\janda\AndroidStudioProjects\Duellum\app\src\main\AndroidManifest.xml:2:1-26:12
-INJECTED from C:\Users\janda\AndroidStudioProjects\Duellum\app\src\main\AndroidManifest.xml:2:1-26:12
+INJECTED from C:\Users\janda\StudioProjects\Duellum\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from C:\Users\janda\StudioProjects\Duellum\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from C:\Users\janda\StudioProjects\Duellum\app\src\main\AndroidManifest.xml:2:1-30:12
 	package
-		ADDED from C:\Users\janda\AndroidStudioProjects\Duellum\app\src\main\AndroidManifest.xml:3:5-38
-		INJECTED from C:\Users\janda\AndroidStudioProjects\Duellum\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\janda\AndroidStudioProjects\Duellum\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\janda\StudioProjects\Duellum\app\src\main\AndroidManifest.xml:3:5-38
+		INJECTED from C:\Users\janda\StudioProjects\Duellum\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\janda\StudioProjects\Duellum\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\Users\janda\AndroidStudioProjects\Duellum\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\janda\AndroidStudioProjects\Duellum\app\src\main\AndroidManifest.xml:2:1-26:12
-		INJECTED from C:\Users\janda\AndroidStudioProjects\Duellum\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\janda\StudioProjects\Duellum\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\janda\StudioProjects\Duellum\app\src\main\AndroidManifest.xml:2:1-30:12
+		INJECTED from C:\Users\janda\StudioProjects\Duellum\app\src\main\AndroidManifest.xml
 	android:versionCode
-		INJECTED from C:\Users\janda\AndroidStudioProjects\Duellum\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\janda\AndroidStudioProjects\Duellum\app\src\main\AndroidManifest.xml:2:1-26:12
-		INJECTED from C:\Users\janda\AndroidStudioProjects\Duellum\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\janda\StudioProjects\Duellum\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\janda\StudioProjects\Duellum\app\src\main\AndroidManifest.xml:2:1-30:12
+		INJECTED from C:\Users\janda\StudioProjects\Duellum\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\janda\AndroidStudioProjects\Duellum\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\janda\StudioProjects\Duellum\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from C:\Users\janda\AndroidStudioProjects\Duellum\app\src\main\AndroidManifest.xml:5:5-24:19
+ADDED from C:\Users\janda\StudioProjects\Duellum\app\src\main\AndroidManifest.xml:5:5-28:19
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\janda\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\e83ab9549b147527ce76929ce9f943a8\AndroidManifest.xml:9:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\janda\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\e83ab9549b147527ce76929ce9f943a8\AndroidManifest.xml:9:5-20
 MERGED from [com.android.support:support-compat:28.0.0] C:\Users\janda\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\e5990b221f5e6699303bb7f059475f8b\AndroidManifest.xml:22:5-94
@@ -60,51 +60,57 @@ MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\janda\.gra
 	android:appComponentFactory
 		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\janda\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\e5990b221f5e6699303bb7f059475f8b\AndroidManifest.xml:22:18-91
 	android:supportsRtl
-		ADDED from C:\Users\janda\AndroidStudioProjects\Duellum\app\src\main\AndroidManifest.xml:10:9-35
+		ADDED from C:\Users\janda\StudioProjects\Duellum\app\src\main\AndroidManifest.xml:10:9-35
 	android:label
-		ADDED from C:\Users\janda\AndroidStudioProjects\Duellum\app\src\main\AndroidManifest.xml:8:9-41
+		ADDED from C:\Users\janda\StudioProjects\Duellum\app\src\main\AndroidManifest.xml:8:9-41
 	android:roundIcon
-		ADDED from C:\Users\janda\AndroidStudioProjects\Duellum\app\src\main\AndroidManifest.xml:9:9-44
+		ADDED from C:\Users\janda\StudioProjects\Duellum\app\src\main\AndroidManifest.xml:9:9-44
 	android:icon
-		ADDED from C:\Users\janda\AndroidStudioProjects\Duellum\app\src\main\AndroidManifest.xml:7:9-39
+		ADDED from C:\Users\janda\StudioProjects\Duellum\app\src\main\AndroidManifest.xml:7:9-39
 	android:allowBackup
-		ADDED from C:\Users\janda\AndroidStudioProjects\Duellum\app\src\main\AndroidManifest.xml:6:9-35
+		ADDED from C:\Users\janda\StudioProjects\Duellum\app\src\main\AndroidManifest.xml:6:9-35
 	android:theme
-		ADDED from C:\Users\janda\AndroidStudioProjects\Duellum\app\src\main\AndroidManifest.xml:11:9-40
+		ADDED from C:\Users\janda\StudioProjects\Duellum\app\src\main\AndroidManifest.xml:11:9-40
 activity#fr.epsi.duellum.duellum.Load_Main
-ADDED from C:\Users\janda\AndroidStudioProjects\Duellum\app\src\main\AndroidManifest.xml:12:9-18:20
+ADDED from C:\Users\janda\StudioProjects\Duellum\app\src\main\AndroidManifest.xml:12:9-18:20
 	android:name
-		ADDED from C:\Users\janda\AndroidStudioProjects\Duellum\app\src\main\AndroidManifest.xml:12:19-44
+		ADDED from C:\Users\janda\StudioProjects\Duellum\app\src\main\AndroidManifest.xml:12:19-44
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\janda\AndroidStudioProjects\Duellum\app\src\main\AndroidManifest.xml:13:13-17:29
+ADDED from C:\Users\janda\StudioProjects\Duellum\app\src\main\AndroidManifest.xml:13:13-17:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\janda\AndroidStudioProjects\Duellum\app\src\main\AndroidManifest.xml:14:17-69
+ADDED from C:\Users\janda\StudioProjects\Duellum\app\src\main\AndroidManifest.xml:14:17-69
 	android:name
-		ADDED from C:\Users\janda\AndroidStudioProjects\Duellum\app\src\main\AndroidManifest.xml:14:25-66
+		ADDED from C:\Users\janda\StudioProjects\Duellum\app\src\main\AndroidManifest.xml:14:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\janda\AndroidStudioProjects\Duellum\app\src\main\AndroidManifest.xml:16:17-77
+ADDED from C:\Users\janda\StudioProjects\Duellum\app\src\main\AndroidManifest.xml:16:17-77
 	android:name
-		ADDED from C:\Users\janda\AndroidStudioProjects\Duellum\app\src\main\AndroidManifest.xml:16:27-74
+		ADDED from C:\Users\janda\StudioProjects\Duellum\app\src\main\AndroidManifest.xml:16:27-74
 activity#fr.epsi.duellum.duellum.Load_GameList
-ADDED from C:\Users\janda\AndroidStudioProjects\Duellum\app\src\main\AndroidManifest.xml:19:9-60
+ADDED from C:\Users\janda\StudioProjects\Duellum\app\src\main\AndroidManifest.xml:19:9-60
 	android:name
-		ADDED from C:\Users\janda\AndroidStudioProjects\Duellum\app\src\main\AndroidManifest.xml:19:19-48
+		ADDED from C:\Users\janda\StudioProjects\Duellum\app\src\main\AndroidManifest.xml:19:19-48
 activity#fr.epsi.duellum.duellum.Load_NewManche
-ADDED from C:\Users\janda\AndroidStudioProjects\Duellum\app\src\main\AndroidManifest.xml:20:9-61
+ADDED from C:\Users\janda\StudioProjects\Duellum\app\src\main\AndroidManifest.xml:20:9-61
 	android:name
-		ADDED from C:\Users\janda\AndroidStudioProjects\Duellum\app\src\main\AndroidManifest.xml:20:19-49
+		ADDED from C:\Users\janda\StudioProjects\Duellum\app\src\main\AndroidManifest.xml:20:19-49
 activity#fr.epsi.duellum.duellum.Load_Manche
-ADDED from C:\Users\janda\AndroidStudioProjects\Duellum\app\src\main\AndroidManifest.xml:21:9-58
+ADDED from C:\Users\janda\StudioProjects\Duellum\app\src\main\AndroidManifest.xml:21:9-58
 	android:name
-		ADDED from C:\Users\janda\AndroidStudioProjects\Duellum\app\src\main\AndroidManifest.xml:21:19-46
+		ADDED from C:\Users\janda\StudioProjects\Duellum\app\src\main\AndroidManifest.xml:21:19-46
 activity#fr.epsi.duellum.duellum.Load_EndManche
-ADDED from C:\Users\janda\AndroidStudioProjects\Duellum\app\src\main\AndroidManifest.xml:22:9-61
+ADDED from C:\Users\janda\StudioProjects\Duellum\app\src\main\AndroidManifest.xml:22:9-61
 	android:name
-		ADDED from C:\Users\janda\AndroidStudioProjects\Duellum\app\src\main\AndroidManifest.xml:22:19-49
+		ADDED from C:\Users\janda\StudioProjects\Duellum\app\src\main\AndroidManifest.xml:22:19-49
+meta-data#preloaded_fonts
+ADDED from C:\Users\janda\StudioProjects\Duellum\app\src\main\AndroidManifest.xml:24:9-26:57
+	android:resource
+		ADDED from C:\Users\janda\StudioProjects\Duellum\app\src\main\AndroidManifest.xml:26:13-54
+	android:name
+		ADDED from C:\Users\janda\StudioProjects\Duellum\app\src\main\AndroidManifest.xml:25:13-43
 uses-sdk
-INJECTED from C:\Users\janda\AndroidStudioProjects\Duellum\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from C:\Users\janda\AndroidStudioProjects\Duellum\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\janda\AndroidStudioProjects\Duellum\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\janda\StudioProjects\Duellum\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\janda\StudioProjects\Duellum\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\janda\StudioProjects\Duellum\app\src\main\AndroidManifest.xml
 MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\janda\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\dfa8dcd1e932e744a76d1de25839f888\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\janda\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\dfa8dcd1e932e744a76d1de25839f888\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\janda\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\e83ab9549b147527ce76929ce9f943a8\AndroidManifest.xml:5:5-7:41
@@ -161,13 +167,13 @@ MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\janda\.gradle\
 MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\janda\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\0e4656f125f8ce193e09297cc51f80bb\AndroidManifest.xml:20:5-44
 MERGED from [android.arch.core:runtime:1.1.1] C:\Users\janda\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\f437cab24aa6f088072efee29e5abbc6\AndroidManifest.xml:20:5-44
 MERGED from [android.arch.core:runtime:1.1.1] C:\Users\janda\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\f437cab24aa6f088072efee29e5abbc6\AndroidManifest.xml:20:5-44
-INJECTED from C:\Users\janda\AndroidStudioProjects\Duellum\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\janda\AndroidStudioProjects\Duellum\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\janda\StudioProjects\Duellum\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\janda\StudioProjects\Duellum\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from C:\Users\janda\AndroidStudioProjects\Duellum\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\janda\AndroidStudioProjects\Duellum\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\janda\AndroidStudioProjects\Duellum\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\janda\StudioProjects\Duellum\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\janda\StudioProjects\Duellum\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\janda\StudioProjects\Duellum\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\janda\AndroidStudioProjects\Duellum\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\janda\AndroidStudioProjects\Duellum\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\janda\AndroidStudioProjects\Duellum\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\janda\StudioProjects\Duellum\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\janda\StudioProjects\Duellum\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\janda\StudioProjects\Duellum\app\src\main\AndroidManifest.xml

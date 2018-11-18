@@ -29,6 +29,10 @@
         <activity android:name="fr.epsi.duellum.duellum.Load_NewManche" />
         <activity android:name="fr.epsi.duellum.duellum.Load_Manche" />
         <activity android:name="fr.epsi.duellum.duellum.Load_EndManche" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

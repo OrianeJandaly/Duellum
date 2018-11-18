@@ -60,6 +60,7 @@ public class Class_Game {
         return image;
     }
 
+
     public void setMatchup(ArrayList<Class_Player> matchup) {
         j1 = matchup.get(0);
         j2 = matchup.get(1);

@@ -9,6 +9,7 @@ import android.support.constraint.ConstraintLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -37,7 +38,7 @@ public class Load_NewManche extends AppCompatActivity {
             }
             findViewById(R.id.layout_newmanche).setBackgroundColor(getResources().getColor(R.color.Couleur1));
             timer.setVisibility(View.VISIBLE);
-            Timer(timer, 5);
+            Timer(timer, 3);
         } else {
             LoadNewManche(findViewById(R.id.layout_newmanche));
         }
@@ -53,6 +54,8 @@ public class Load_NewManche extends AppCompatActivity {
             jeu.setMatchup(matchup);
             ((TextView) v.findViewById(R.id.joueur1_newmanche)).setText(matchup.get(0).getName());
             ((TextView) v.findViewById(R.id.joueur2_newmanche)).setText(matchup.get(1).getName());
+            ((ImageView) v.findViewById(R.id.image_newmanche)).setImageResource(jeu.getImage());
+
             ((TextView) v.findViewById(R.id.count_newmanche)).setText("Manche " + Class_Player.getCountManches());
             ((TextView) v.findViewById(R.id.titrejeu_newmanche)).setText(jeu.getName());
             ((TextView) v.findViewById(R.id.descriptionjeu_newmanche)).setText(jeu.getDescription());

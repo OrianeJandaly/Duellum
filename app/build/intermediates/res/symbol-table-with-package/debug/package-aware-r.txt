@@ -11,6 +11,10 @@ anim abc_slide_out_bottom
 anim abc_slide_out_top
 anim abc_tooltip_enter
 anim abc_tooltip_exit
+array com_google_android_gms_fonts_certs
+array com_google_android_gms_fonts_certs_dev
+array com_google_android_gms_fonts_certs_prod
+array preloaded_fonts
 attr actionBarDivider
 attr actionBarItemBackground
 attr actionBarPopupTheme
@@ -662,6 +666,10 @@ drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+font adamina
+font baloo
+font love_ya_like_a_sister
+font macondo
 id ALT
 id CTRL
 id FUNCTION
@@ -710,9 +718,11 @@ id clicktest_count1
 id clicktest_count2
 id clicktest_j1
 id clicktest_j2
+id clicktest_middle
 id clip_horizontal
 id clip_vertical
 id collapseActionView
+id constraintLayout2
 id content
 id contentPanel
 id continue_endmanche
@@ -745,9 +755,9 @@ id icon_group
 id ifRoom
 id image
 id imageView
-id imageView2
 id imageView3
 id imageView4
+id image_newmanche
 id info
 id invisible
 id italic
@@ -846,7 +856,6 @@ id topPanel
 id uniform
 id up
 id useLogo
-id view
 id winner_endmanche
 id withText
 id wrap

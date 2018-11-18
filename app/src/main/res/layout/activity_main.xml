@@ -8,6 +8,7 @@
     android:focusable="true"
     android:layout_height="match_parent"
     android:background="@color/Couleur1"
+    android:theme="@style/AppTheme"
     tools:context=".Load_Main">
 
     <TextView

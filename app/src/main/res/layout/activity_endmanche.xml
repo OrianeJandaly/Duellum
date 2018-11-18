@@ -5,34 +5,40 @@
     android:background="@color/Couleur1"
     android:id="@+id/layout_newmanche"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".Load_EndManche">
 
     <TextView
         android:id="@+id/manche_endmanche"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
         android:fontFamily="casual"
         android:text="FIN MANCHE"
         android:textAlignment="textStart"
         android:textAllCaps="true"
         android:textColor="@color/Couleur3"
-        android:textSize="30sp"
+        android:textSize="50sp"
         android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout2"
         android:layout_width="match_parent"
-        android:layout_height="208dp"
-        android:layout_marginTop="8dp"
+        android:layout_height="186dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/continue_endmanche"
-        app:layout_constraintTop_toBottomOf="@+id/manche_endmanche"
-        tools:layout_editor_absoluteX="0dp">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:id="@+id/winner_endmanche"
@@ -41,13 +47,15 @@
             android:layout_marginStart="65dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
-            android:fontFamily="casual"
+            android:fontFamily="@font/baloo"
             android:gravity="center"
             android:text="WINNER"
             android:textAlignment="center"
             android:textAllCaps="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
             android:textColor="@color/Couleur3"
             android:textSize="40sp"
+            android:textStyle="bold"
             android:visibility="visible"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -60,11 +68,11 @@
             android:layout_marginStart="45dp"
             android:layout_marginEnd="8dp"
             android:layout_marginBottom="8dp"
-            android:fontFamily="casual"
+            android:fontFamily="@font/macondo"
             android:text="LOOSER"
             android:textAlignment="textEnd"
             android:textAllCaps="true"
-            android:textColor="@color/Couleur3"
+            android:textColor="@color/Couleur4"
             android:textSize="30sp"
             android:visibility="visible"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -96,7 +104,8 @@
         android:layout_width="match_parent"
 
         android:layout_height="98dp"
-        android:layout_marginBottom="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
         android:background="@color/Couleur3"
         android:fontFamily="casual"
         android:lineSpacingExtra="0sp"
@@ -107,6 +116,7 @@
         android:textSize="36sp"
         android:typeface="monospace"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2"
         tools:layout_editor_absoluteX="8dp" />
 
 </android.support.constraint.ConstraintLayout>
