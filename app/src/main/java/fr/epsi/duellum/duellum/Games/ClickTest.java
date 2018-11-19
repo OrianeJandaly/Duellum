@@ -145,8 +145,8 @@ public class ClickTest extends Class_Game {
         click2.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 if (winner == null) {
-                    ClickOn(click2);
                     score2++;
+                    ClickOn(click2);
                 }
             }
         });

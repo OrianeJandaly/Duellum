@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cell_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Couleur1"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/classement_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="casual"
+        android:text="Joueur1"
+        android:textAllCaps="true"
+        android:textColor="@color/Couleur3"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/classement_victoires"
+        app:layout_constraintEnd_toEndOf="@+id/classement_defaites"
+        app:layout_constraintStart_toStartOf="@+id/classement_victoires"
+        app:layout_constraintTop_toTopOf="@+id/classement_name2" />
+
+    <TextView
+        android:id="@+id/classement_name2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:text="1"
+        android:textAlignment="center"
+        android:textColor="@color/Couleur3"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/classement_victoires"
+        android:layout_width="75dp"
+        android:layout_height="25dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="casual"
+        android:gravity="bottom"
+        android:text="3 Victoires"
+        android:textColor="@color/Couleur3"
+        app:layout_constraintBottom_toBottomOf="@+id/classement_name2"
+        tools:layout_editor_absoluteX="57dp" />
+
+    <TextView
+        android:id="@+id/classement_defaites"
+        android:layout_width="75dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="8dp"
+        android:fontFamily="casual"
+        android:gravity="bottom"
+        android:text="3 Défaites"
+        android:textColor="@color/Couleur3"
+        app:layout_constraintStart_toEndOf="@+id/classement_victoires"
+        app:layout_constraintTop_toBottomOf="@+id/classement_name" />
+
+</android.support.constraint.ConstraintLayout>

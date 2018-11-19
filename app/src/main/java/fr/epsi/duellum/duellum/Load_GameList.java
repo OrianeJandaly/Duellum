@@ -5,7 +5,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ListAdapter;
@@ -24,7 +23,7 @@ public class Load_GameList extends AppCompatActivity {
         //charger jeux
         Class_Game.LoadGames();
         ArrayList<Class_Game> listejeux = Class_Game.getGames();
-        final ListView jeux = (ListView) findViewById(R.id.jeux);
+        final ListView jeux = (ListView) findViewById(R.id.classement);
 
         //afficher les jeux (isolé du reste du code)
         {

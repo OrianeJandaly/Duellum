@@ -666,9 +666,7 @@ drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
-font adamina
 font baloo
-font love_ya_like_a_sister
 font macondo
 id ALT
 id CTRL
@@ -712,6 +710,7 @@ id center_vertical
 id chains
 id checkbox
 id chronometer
+id classement_button
 id clicktest_click1
 id clicktest_click2
 id clicktest_count1
@@ -770,6 +769,7 @@ id joueur2
 id joueur2_newmanche
 id joueur3
 id joueur4
+id layout_manche
 id layout_newmanche
 id left
 id line1
@@ -830,6 +830,7 @@ id src_over
 id standard
 id start
 id start_timer
+id start_timer_manche
 id submenuarrow
 id submit_area
 id tabMode
@@ -893,6 +894,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_classement
 layout activity_endmanche
 layout activity_jeux
 layout activity_main

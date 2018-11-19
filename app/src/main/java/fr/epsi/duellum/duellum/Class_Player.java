@@ -1,5 +1,7 @@
 package fr.epsi.duellum.duellum;
 
+import android.util.Log;
+
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -80,18 +82,21 @@ public class Class_Player {
     }
 
     public static boolean isOver() {
-        boolean over = true;
-        boolean over_2 = true;
+        boolean player1_canplay = false;
+        boolean player2_canplay = false ;
         for (Class_Player player : joueurs) {
             if (player.canPlay()) {
-                if (over) {
-                    over_2 = false;
+                if (player1_canplay) {
+                    Log.e("oui", "player2_canplay go to true");
+                    player2_canplay = true;
                 } else {
-                    over = false;
+                    Log.e("oui", "player1_canplay go to true");
+                    player1_canplay = true;
                 }
             }
         }
-        return (!over && !over_2);
+        Log.e("oui", ((!player1_canplay) && !player2_canplay) +"");
+        return (!player1_canplay && !player2_canplay);
     }
 
     public static void resetJoueurs() {

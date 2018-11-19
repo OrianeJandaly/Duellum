@@ -3,6 +3,7 @@ package fr.epsi.duellum.duellum;
 import android.app.Activity;
 import android.content.Context;
 import android.graphics.Bitmap;
+import android.view.View;
 
 import java.util.ArrayList;
 import java.util.Random;

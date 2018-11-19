@@ -3,9 +3,12 @@ package fr.epsi.duellum.duellum;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
+import android.graphics.PorterDuff;
+import android.graphics.PorterDuffColorFilter;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.constraint.ConstraintLayout;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
@@ -47,7 +50,7 @@ public class Load_NewManche extends AppCompatActivity {
 
     public void LoadNewManche(View v) {
         if (Class_Player.isOver()) {
-//partie terminée
+            startActivity(this, Load_Classement.class);
         } else {
             ArrayList<Class_Player> matchup = Class_Player.getRandomMatchup();
             final Class_Game jeu = Class_Game.getRandomGame();
@@ -55,6 +58,8 @@ public class Load_NewManche extends AppCompatActivity {
             ((TextView) v.findViewById(R.id.joueur1_newmanche)).setText(matchup.get(0).getName());
             ((TextView) v.findViewById(R.id.joueur2_newmanche)).setText(matchup.get(1).getName());
             ((ImageView) v.findViewById(R.id.image_newmanche)).setImageResource(jeu.getImage());
+            ((ImageView) v.findViewById(R.id.image_newmanche)).setColorFilter(new
+                    PorterDuffColorFilter(ContextCompat.getColor(this, R.color.Couleur1), PorterDuff.Mode.MULTIPLY));
 
             ((TextView) v.findViewById(R.id.count_newmanche)).setText("Manche " + Class_Player.getCountManches());
             ((TextView) v.findViewById(R.id.titrejeu_newmanche)).setText(jeu.getName());

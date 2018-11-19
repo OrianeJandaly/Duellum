@@ -9,7 +9,7 @@
         android:roundIcon="@drawable/icone"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Load_Main">
+        <activity android:name=".Load_Main" android:launchMode="singleTop">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -20,6 +20,7 @@
         <activity android:name=".Load_NewManche"></activity>
         <activity android:name=".Load_Manche"></activity>
         <activity android:name=".Load_EndManche"></activity>
+        <activity android:name=".Load_Classement"></activity>
 
         <meta-data
             android:name="preloaded_fonts"
