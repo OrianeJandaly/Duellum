@@ -11,6 +11,7 @@ import android.widget.ListAdapter;
 import android.widget.ListView;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class Load_Classement extends AppCompatActivity {
 
@@ -19,7 +20,19 @@ public class Load_Classement extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_classement);
+        ArrayList<Class_Player> listejoueurs = Class_Player.getJoueurs();
+        HashMap<Class_Player, Integer> classe = new HashMap<>();
+        for(Class_Player player : listejoueurs) {
+            classe.put(player, player.getVictoires());
+        }
 
+          final ListView classement =  findViewById(R.id.list_classement);
+
+        //afficher les jeux (isolé du reste du code)
+        {
+            final ClassementAdapter adapter = new ClassementAdapter(Load_Classement.this, listejoueurs);
+            classement.setAdapter(adapter);
+        }
         final Button button = findViewById(R.id.classement_button);
         button.setOnClickListener(new View.OnClickListener() {
             @Override

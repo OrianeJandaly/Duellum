@@ -710,7 +710,12 @@ id center_vertical
 id chains
 id checkbox
 id chronometer
+id classement
 id classement_button
+id classement_defaites
+id classement_name
+id classement_position
+id classement_victoires
 id clicktest_click1
 id clicktest_click2
 id clicktest_count1
@@ -721,7 +726,9 @@ id clicktest_middle
 id clip_horizontal
 id clip_vertical
 id collapseActionView
+id constraintLayout
 id constraintLayout2
+id constraintLayout3
 id content
 id contentPanel
 id continue_endmanche
@@ -761,7 +768,6 @@ id info
 id invisible
 id italic
 id item_touch_helper_previous_elevation
-id jeux
 id jouer
 id joueur1
 id joueur1_newmanche
@@ -776,9 +782,10 @@ id line1
 id line3
 id linearLayout
 id linearLayout2
-id linearLayout3
 id listMode
+id list_classement
 id list_item
+id listejeux
 id looser_endmanche
 id manche_endmanche
 id message
@@ -816,6 +823,7 @@ id search_plate
 id search_src_text
 id search_voice_btn
 id select_dialog_listview
+id separator
 id shortcut
 id showCustom
 id showHome
@@ -846,6 +854,8 @@ id textView2
 id textView3
 id textView4
 id textView5
+id textView6
+id textView7
 id time
 id title
 id titleDividerNoCustom
@@ -857,6 +867,10 @@ id topPanel
 id uniform
 id up
 id useLogo
+id view
+id view2
+id view3
+id view4
 id winner_endmanche
 id withText
 id wrap
@@ -900,6 +914,7 @@ layout activity_jeux
 layout activity_main
 layout activity_manche
 layout activity_newmanche
+layout cellule_classement
 layout cellule_listview
 layout notification_action
 layout notification_action_tombstone

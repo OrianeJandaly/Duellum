@@ -81,21 +81,47 @@ public class Class_Player {
         return count;
     }
 
+    public static ArrayList<Class_Player> getJoueurs() {
+        ArrayList<Class_Player> joueurs_tries = new ArrayList<>();
+        for (int i = 0; i < joueurs.size(); i++) {
+            Class_Player better = getBetterNotInside(joueurs_tries);
+            joueurs_tries.add(better);
+        }
+        return joueurs_tries;
+    }
+
+
+    public static Class_Player getBetterNotInside(ArrayList<Class_Player> not) {
+        Class_Player better = null;
+        Log.e("oui", "0");
+        for (Class_Player player : joueurs) {
+            Log.e("oui", "1");
+            if (!not.contains(player)) {
+                if (better == null) {
+                    better = player;
+
+                } else {
+                    if (player.getVictoires() > better.getVictoires() && !not.contains(player)) {
+                        better = player;
+                    }
+                }
+            }
+        }
+        return better;
+    }
+
     public static boolean isOver() {
         boolean player1_canplay = false;
-        boolean player2_canplay = false ;
+        boolean player2_canplay = false;
         for (Class_Player player : joueurs) {
             if (player.canPlay()) {
                 if (player1_canplay) {
-                    Log.e("oui", "player2_canplay go to true");
                     player2_canplay = true;
                 } else {
-                    Log.e("oui", "player1_canplay go to true");
                     player1_canplay = true;
                 }
             }
         }
-        Log.e("oui", ((!player1_canplay) && !player2_canplay) +"");
         return (!player1_canplay && !player2_canplay);
     }
 
@@ -111,7 +137,4 @@ public class Class_Player {
         joueurs.add(j);
     }
 
-    public static Class_Player getJoueur(int i) {
-        return joueurs.get(i - 1);
-    }
 }

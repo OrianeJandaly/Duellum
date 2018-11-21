@@ -97,6 +97,14 @@ public class Class_Game {
     public static void LoadGames() {
         jeux = new ArrayList<>();
         jeux.add(new ClickTest());
+        jeux.add(new ClickTest());
+        jeux.add(new ClickTest());
+        jeux.add(new ClickTest());
+        jeux.add(new ClickTest());
+        jeux.add(new ClickTest());
+        jeux.add(new ClickTest());
+        jeux.add(new ClickTest());
+        jeux.add(new ClickTest());
 
     }
 }

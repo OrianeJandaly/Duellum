@@ -23,7 +23,7 @@ public class Load_GameList extends AppCompatActivity {
         //charger jeux
         Class_Game.LoadGames();
         ArrayList<Class_Game> listejeux = Class_Game.getGames();
-        final ListView jeux = (ListView) findViewById(R.id.classement);
+        final ListView jeux = findViewById(R.id.listejeux);
 
         //afficher les jeux (isolé du reste du code)
         {

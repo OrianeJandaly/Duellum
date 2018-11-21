@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\janda\\AndroidStudioProjects\\Duellum\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-uk\\values-uk.xml",
+            "outputFile": "C:\\Users\\janda\\StudioProjects\\Duellum\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-uk\\values-uk.xml",
             "map": [
                 {
                     "source": "C:\\Users\\janda\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-28.0.0.aar\\e5990b221f5e6699303bb7f059475f8b\\res\\values-uk\\values-uk.xml",
