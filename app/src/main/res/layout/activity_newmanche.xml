@@ -11,11 +11,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="8dp"
         android:gravity="center"
         android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -119,14 +120,14 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <android.support.constraint.ConstraintLayout
-        android:id="@+id/linearLayout3"
+        android:id="@+id/constraintLayout3"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
+        android:layout_height="300dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:gravity="center"
+        android:maxHeight="300dp"
+        android:minHeight="300dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -137,12 +138,15 @@
             android:id="@+id/image_newmanche"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:layout_marginTop="208dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
             android:adjustViewBounds="false"
             android:cropToPadding="false"
+            app:layout_constraintBottom_toTopOf="@+id/titrejeu_newmanche"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/count_newmanche"
+            app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/beer" />
 
         <TextView
@@ -158,10 +162,10 @@
             android:textColor="@color/Couleur1"
             android:textSize="28sp"
             android:visibility="visible"
-            app:layout_constraintBottom_toTopOf="@+id/descriptionjeu_newmanche"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/image_newmanche" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/descriptionjeu_newmanche"
@@ -177,29 +181,29 @@
             android:visibility="visible"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.505"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titrejeu_newmanche" />
     </android.support.constraint.ConstraintLayout>
 
     <Button
         android:id="@+id/continue_endmanche"
         style="@style/Widget.AppCompat.Button"
         android:layout_width="match_parent"
-
         android:layout_height="98dp"
         android:layout_marginTop="8dp"
-        android:layout_marginBottom="24dp"
+        android:layout_marginBottom="8dp"
         android:background="@color/Couleur1"
         android:fontFamily="casual"
         android:lineSpacingExtra="0sp"
         android:padding="10dp"
         android:text="commencer"
-        android:textAllCaps="true"
         android:textColor="@color/Couleur3"
         android:textSize="45sp"
         android:typeface="monospace"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
-        tools:layout_editor_absoluteX="0dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3" />
 
 </android.support.constraint.ConstraintLayout>
