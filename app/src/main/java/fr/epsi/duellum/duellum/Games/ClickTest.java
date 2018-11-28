@@ -13,10 +13,7 @@ import java.text.DecimalFormat;
 import java.util.ArrayList;
 
 import fr.epsi.duellum.duellum.Class_Game;
-import fr.epsi.duellum.duellum.Class_Player;
 import fr.epsi.duellum.duellum.Load_EndManche;
-import fr.epsi.duellum.duellum.Load_Manche;
-import fr.epsi.duellum.duellum.Load_NewManche;
 import fr.epsi.duellum.duellum.R;
 
 public class ClickTest extends Class_Game {
@@ -40,7 +37,7 @@ public class ClickTest extends Class_Game {
         this.objets.add(R.id.clicktest_j1);
         this.objets.add(R.id.clicktest_j2);
         this.objets.add(R.id.clicktest_middle);
-        this.image = R.drawable.game_click;
+        this.image = R.drawable.jeu_gameclick_icone;
     }
 
     //utils

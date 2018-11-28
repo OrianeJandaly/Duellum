@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/cell_layout"
     android:layout_width="match_parent"
-    android:layout_height="75dp"
+    android:layout_height="wrap_content"
     android:background="@color/Couleur1">
 
 
@@ -25,6 +25,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
         android:fontFamily="casual"
         android:textColor="@color/Couleur3"
         android:textSize="16sp"
@@ -35,11 +36,13 @@
 
     <TextView
         android:id="@+id/description"
-        android:layout_width="317dp"
-        android:layout_height="25dp"
+        android:layout_width="334dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
         android:fontFamily="casual"
-        android:gravity="bottom"
+        android:gravity="top"
         android:textColor="@color/Couleur3"
+        android:textSize="12.5sp"
         app:layout_constraintBottom_toBottomOf="@+id/image"
         app:layout_constraintStart_toStartOf="@+id/titre"
         tools:text="Description" />

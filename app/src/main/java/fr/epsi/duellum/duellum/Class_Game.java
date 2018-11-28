@@ -9,6 +9,7 @@ import java.util.ArrayList;
 import java.util.Random;
 
 import fr.epsi.duellum.duellum.Games.ClickTest;
+import fr.epsi.duellum.duellum.Games.De;
 
 public class Class_Game {
     private String nom;
@@ -97,14 +98,8 @@ public class Class_Game {
     public static void LoadGames() {
         jeux = new ArrayList<>();
         jeux.add(new ClickTest());
-        jeux.add(new ClickTest());
-        jeux.add(new ClickTest());
-        jeux.add(new ClickTest());
-        jeux.add(new ClickTest());
-        jeux.add(new ClickTest());
-        jeux.add(new ClickTest());
-        jeux.add(new ClickTest());
-        jeux.add(new ClickTest());
+        jeux.add(new De());
+
 
     }
 }
