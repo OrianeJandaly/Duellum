@@ -706,6 +706,8 @@ id alertTitle
 id all
 id always
 id async
+id barrebas_classement
+id barrebas_jeux
 id barrier
 id beginning
 id blocking
@@ -879,8 +881,6 @@ id topPanel
 id uniform
 id up
 id useLogo
-id view
-id view2
 id view3
 id view4
 id winner_endmanche

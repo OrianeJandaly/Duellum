@@ -24,7 +24,11 @@ public class Load_GameList extends AppCompatActivity {
         Class_Game.LoadGames();
         ArrayList<Class_Game> listejeux = Class_Game.getGames();
         final ListView jeux = findViewById(R.id.listejeux);
-
+if(listejeux.size() > 4) {
+    findViewById(R.id.barrebas_jeux).setVisibility(View.VISIBLE);
+} else {
+    findViewById(R.id.barrebas_jeux).setVisibility(View.INVISIBLE);
+}
         //afficher les jeux (isolé du reste du code)
         {
             final GameAdapter adapter = new GameAdapter(Load_GameList.this, listejeux);

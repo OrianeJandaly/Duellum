@@ -1,29 +1,29 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\janda\\StudioProjects\\Duellum\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+            "outputFile": "C:\\Users\\janda\\AndroidStudioProjects\\Duellum\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\janda\\StudioProjects\\Duellum\\app\\src\\main\\res\\values\\styles.xml",
+                    "source": "C:\\Users\\janda\\AndroidStudioProjects\\Duellum\\app\\src\\main\\res\\values\\preloaded_fonts.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
-                        "startOffsets": "19",
-                        "endLines": "8",
+                        "startOffsets": "57",
+                        "endLines": "5",
                         "endColumns": "12",
-                        "endOffsets": "430"
+                        "endOffsets": "192"
                     },
                     "to": {
-                        "startLines": "1903",
+                        "startLines": "16",
                         "startColumns": "4",
-                        "startOffsets": "114397",
-                        "endLines": "1909",
+                        "startOffsets": "3622",
+                        "endLines": "19",
                         "endColumns": "12",
-                        "endOffsets": "114802"
+                        "endOffsets": "3754"
                     }
                 },
                 {
-                    "source": "C:\\Users\\janda\\StudioProjects\\Duellum\\app\\src\\main\\res\\values\\colors.xml",
+                    "source": "C:\\Users\\janda\\AndroidStudioProjects\\Duellum\\app\\src\\main\\res\\values\\colors.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
@@ -59,6 +59,44 @@
                     }
                 },
                 {
+                    "source": "C:\\Users\\janda\\AndroidStudioProjects\\Duellum\\app\\src\\main\\res\\values\\styles.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "19",
+                        "endLines": "8",
+                        "endColumns": "12",
+                        "endOffsets": "430"
+                    },
+                    "to": {
+                        "startLines": "1903",
+                        "startColumns": "4",
+                        "startOffsets": "114397",
+                        "endLines": "1909",
+                        "endColumns": "12",
+                        "endOffsets": "114802"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\janda\\AndroidStudioProjects\\Duellum\\app\\src\\main\\res\\values\\font_certs.xml",
+                    "from": {
+                        "startLines": "2,6,11",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "57,263,1993",
+                        "endLines": "5,10,15",
+                        "endColumns": "12,19,19",
+                        "endOffsets": "257,1987,3582"
+                    },
+                    "to": {
+                        "startLines": "2,6,11",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "105,307,2032",
+                        "endLines": "5,10,15",
+                        "endColumns": "12,19,19",
+                        "endOffsets": "302,2027,3617"
+                    }
+                },
+                {
                     "source": "C:\\Users\\janda\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-28.0.0.aar\\e5990b221f5e6699303bb7f059475f8b\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2,3,6,13,56,88,125,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,171,172,176,177,178",
@@ -78,22 +116,20 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\janda\\StudioProjects\\Duellum\\app\\src\\main\\res\\values\\preloaded_fonts.xml",
+                    "source": "C:\\Users\\janda\\AndroidStudioProjects\\Duellum\\app\\src\\main\\res\\values\\strings.xml",
                     "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "57",
-                        "endLines": "5",
-                        "endColumns": "12",
-                        "endOffsets": "192"
+                        "startLines": "1,2",
+                        "startColumns": "4,4",
+                        "startOffsets": "17,63",
+                        "endColumns": "44,63",
+                        "endOffsets": "57,122"
                     },
                     "to": {
-                        "startLines": "16",
-                        "startColumns": "4",
-                        "startOffsets": "3622",
-                        "endLines": "19",
-                        "endColumns": "12",
-                        "endOffsets": "3754"
+                        "startLines": "1894,1897",
+                        "startColumns": "4,4",
+                        "startOffsets": "113722,113891",
+                        "endColumns": "44,63",
+                        "endOffsets": "113762,113950"
                     }
                 },
                 {
@@ -151,42 +187,6 @@
                         "endLines": "1428,1794,1795,1796,1804,1805,1806,1837",
                         "endColumns": "24,58,47,55,74,75,71,65",
                         "endOffsets": "85511,107308,107356,107412,108098,108174,108246,110130"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\janda\\StudioProjects\\Duellum\\app\\src\\main\\res\\values\\strings.xml",
-                    "from": {
-                        "startLines": "1,2",
-                        "startColumns": "4,4",
-                        "startOffsets": "17,63",
-                        "endColumns": "44,63",
-                        "endOffsets": "57,122"
-                    },
-                    "to": {
-                        "startLines": "1894,1897",
-                        "startColumns": "4,4",
-                        "startOffsets": "113722,113891",
-                        "endColumns": "44,63",
-                        "endOffsets": "113762,113950"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\janda\\StudioProjects\\Duellum\\app\\src\\main\\res\\values\\font_certs.xml",
-                    "from": {
-                        "startLines": "2,6,11",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "57,263,1993",
-                        "endLines": "5,10,15",
-                        "endColumns": "12,19,19",
-                        "endOffsets": "257,1987,3582"
-                    },
-                    "to": {
-                        "startLines": "2,6,11",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "105,307,2032",
-                        "endLines": "5,10,15",
-                        "endColumns": "12,19,19",
-                        "endOffsets": "302,2027,3617"
                     }
                 }
             ]

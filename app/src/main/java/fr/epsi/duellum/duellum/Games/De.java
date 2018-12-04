@@ -69,7 +69,7 @@ public class De extends Class_Game {
             public void onClick(View v) {
                 if (!running) {
                     running = true;
-                    Roulette(a, c, image_de_un, 5);
+                    Roulette(a, c, 5);
                     //check roulette
                 }
             }
@@ -77,22 +77,26 @@ public class De extends Class_Game {
 
     }
 
-    public void Roulette(final Activity a, final Context c, final ImageView image, final int i) {
+    public void Roulette(final Activity a, final Context c, final int i) {
         final Random r = new Random();
         final Handler handler = new Handler();
+      final ImageView de_un_image = a.findViewById(R.id.de_premierde);
+        final ImageView de_deux_image = a.findViewById(R.id.de_secondde);
+
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
                 if (i > 0) {
-                    image.setImageResource(des.get(r.nextInt(des.size())));
-                    Roulette(a, c, image, (i - 1));
+                    de_un_image.setImageResource(des.get(r.nextInt(des.size())));
+                    de_deux_image.setImageResource(des.get(r.nextInt(des.size())));
+
+                    Roulette(a, c, (i - 1));
                 } else {
                     int lancer = (r.nextInt(6)) + 1;
-                    image.setImageResource(getImage(lancer));
-                    if (de_un == 0) {
-                        de_un = lancer;
-                        Roulette(a, c, ((ImageView) a.findViewById(R.id.de_secondde)), 5);
-                    } else {
+                    de_un_image.setImageResource(getImage(lancer));
+                    de_un = lancer;
+                    lancer = (r.nextInt(6)) + 1;
+                    de_deux_image.setImageResource(getImage(lancer));
                         de_deux = lancer;
 
                         handler.postDelayed(new Runnable() {
@@ -100,7 +104,12 @@ public class De extends Class_Game {
                             public void run() {
                                 if (de_un == de_deux) {
                                     winner = joueur;
-                                    startActivity(a, c, Load_EndManche.class);
+                                    handler.postDelayed(new Runnable() {
+                                        @Override
+                                        public void run() {
+                                            startActivity(a, c, Load_EndManche.class);
+                                        }
+                                    }, 1000);
                                 } else {
                                     final TextView joueurr = a.findViewById(R.id.de_joueur);
                                     if (joueur == j1) {
@@ -116,9 +125,8 @@ public class De extends Class_Game {
                                     running = false;
                                 }
                             }
-                        }, 2000);
+                        }, 1000);
                     }
-                }
             }
         }, 250);
     }

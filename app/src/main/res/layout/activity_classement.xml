@@ -9,10 +9,11 @@
     tools:context=".Load_EndManche">
 
     <View
-        android:id="@+id/view"
+        android:id="@+id/barrebas_classement"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="@color/Couleur3"
+        android:visibility="invisible"
         app:layout_constraintTop_toBottomOf="@+id/list_classement" />
 
     <View

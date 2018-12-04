@@ -25,7 +25,12 @@ public class Load_Classement extends AppCompatActivity {
         for(Class_Player player : listejoueurs) {
             classe.put(player, player.getVictoires());
         }
-
+        if(listejoueurs.size() > 4) {
+            findViewById(R.id.barrebas_classement).setVisibility(View.VISIBLE);
+        } else {
+            findViewById(R.id.barrebas_classement).setVisibility(View.INVISIBLE);
+        }
+Class_Game.setActiveGame(null);
           final ListView classement =  findViewById(R.id.list_classement);
 
         //afficher les jeux (isolé du reste du code)
