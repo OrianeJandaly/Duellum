@@ -1,6 +1,7 @@
 package fr.epsi.duellum.duellum;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -48,6 +49,13 @@ if(listejeux.size() > 4) {
                 }
                 if (enabled) {
                     startActivity(Load_GameList.this, Load_NewManche.class);
+                }
+                else {
+                    AlertDialog.Builder builder = new AlertDialog.Builder(Load_GameList.this);
+                    builder.setCancelable(true);
+                    builder.setMessage("Tu dois choisir au moins 1 mini-jeu !");
+                    AlertDialog dialog = builder.create();
+                    dialog.show();
                 }
             }
         });

@@ -23,8 +23,7 @@ public class ClickTest extends Class_Game {
     private int score1;
     private int score2;
     private double compteur;
-
-
+private boolean can_click;
     //constructeur
     public ClickTest() {
         super("Click Test", "Test de rapidité de clic sur 10 secondes");
@@ -38,6 +37,7 @@ public class ClickTest extends Class_Game {
         this.objets.add(R.id.clicktest_j2);
         this.objets.add(R.id.clicktest_middle);
         this.image = R.drawable.jeu_gameclick_icone;
+    can_click = false;
     }
 
     //utils
@@ -46,8 +46,6 @@ public class ClickTest extends Class_Game {
         final TextView count2 = a.findViewById(R.id.clicktest_count2);
         final Button click1 = a.findViewById(R.id.clicktest_click1);
         final Button click2 = a.findViewById(R.id.clicktest_click2);
-        final TextView t_j1 = a.findViewById(R.id.clicktest_j1);
-        final TextView t_j2 = a.findViewById(R.id.clicktest_j2);
         DecimalFormat numberFormat = new DecimalFormat("#.#");
         count1.setText(numberFormat.format(compteur) + "");
         count2.setText(numberFormat.format(compteur) + "");
@@ -59,6 +57,7 @@ public class ClickTest extends Class_Game {
                 if (compteur > 0) {
                     Count(a, c);
                 } else {
+                    can_click = false;
                     count1.setText(score1 + "");
                     count2.setText(score2 + "");
 
@@ -91,12 +90,19 @@ public class ClickTest extends Class_Game {
         a.startActivityForResult(i, 1);
     }
 
-    public void Start(Activity a, Context c) {
+    public void Start(final Activity a, final Context c) {
         score1 = 0;
         winner = null;
         score2 = 0;
         compteur = 10.00;
-        Count(a, c);
+        Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                can_click = true;
+                Count(a, c);
+            }
+        }, 2000);
     }
 
     public void ClickOn(final Button button) {
@@ -131,7 +137,7 @@ public class ClickTest extends Class_Game {
 
         click1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                if (winner == null) {
+                if (winner == null && can_click) {
                     ClickOn(click1);
                     score1++;
                 }
@@ -141,7 +147,7 @@ public class ClickTest extends Class_Game {
         final Button click2 = a.findViewById(R.id.clicktest_click2);
         click2.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                if (winner == null) {
+                if (winner == null && can_click) {
                     score2++;
                     ClickOn(click2);
                 }

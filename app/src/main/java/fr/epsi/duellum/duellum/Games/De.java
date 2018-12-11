@@ -78,7 +78,9 @@ public class De extends Class_Game {
     }
 
     public void Roulette(final Activity a, final Context c, final int i) {
+        final Random r2 = new Random();
         final Random r = new Random();
+
         final Handler handler = new Handler();
       final ImageView de_un_image = a.findViewById(R.id.de_premierde);
         final ImageView de_deux_image = a.findViewById(R.id.de_secondde);
@@ -88,16 +90,14 @@ public class De extends Class_Game {
             public void run() {
                 if (i > 0) {
                     de_un_image.setImageResource(des.get(r.nextInt(des.size())));
-                    de_deux_image.setImageResource(des.get(r.nextInt(des.size())));
+                    de_deux_image.setImageResource(des.get(r2.nextInt(des.size())));
 
                     Roulette(a, c, (i - 1));
                 } else {
-                    int lancer = (r.nextInt(6)) + 1;
-                    de_un_image.setImageResource(getImage(lancer));
-                    de_un = lancer;
-                    lancer = (r.nextInt(6)) + 1;
-                    de_deux_image.setImageResource(getImage(lancer));
-                        de_deux = lancer;
+                    de_un = (r.nextInt(6)) + 1;
+                    de_un_image.setImageResource(getImage(de_un));
+                    de_deux = (r2.nextInt(6)) +1;
+                    de_deux_image.setImageResource(getImage(de_deux));
 
                         handler.postDelayed(new Runnable() {
                             @Override
